@@ -1,21 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from 'react';
+import About from './components/About';
+import Contact from './components/Contact';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Exprience from './components/Exprience';
+import Hero from './components/Hero';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        
-      <div className="card">
-      <h1 class="text-3xl font-bold underline">
-          Hello world!
-        </h1>
+    <div className="min-h-screen bg-white">
+      
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Exprience/>
+      <Contact/>
+      
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p>© 2024 Sarah Anderson. All rights reserved.</p>
         </div>
-    </>
-  )
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
