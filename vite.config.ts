@@ -12,5 +12,13 @@ export default defineConfig({
         autoprefixer()
       ]
     }
-  }
+  },
+  build: {
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Suppress "use client" directive warnings
+        if (warning.message.includes('Module level directives cause errors when bundled')) {
+          return
+        }
+        warn(warning)}}}
 })
