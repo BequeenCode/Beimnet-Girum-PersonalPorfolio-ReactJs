@@ -47,7 +47,7 @@ export default function Hero() {
             <a href="https://github.com/BequeenCode" className="text-gray-600 hover:text-purple-600 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" className="text-gray-600 hover:text-purple-600 transition-colors">
+            <a href="https://www.linkedin.com/in/beimnet-girum-b12230296/" className="text-gray-600 hover:text-purple-600 transition-colors">
               <Linkedin size={24} />
             </a>
             <a href="girumbeimnet74@gmail.com" className="text-gray-600 hover:text-purple-600 transition-colors">
