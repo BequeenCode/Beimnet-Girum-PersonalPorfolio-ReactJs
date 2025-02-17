@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import Typewriter from 'typewriter-effect'
+import { Github, Instagram, Linkedin, Mail, Send } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -13,8 +14,23 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
-            Sarah Anderson
+            <div className="from-purpl-600 to-pink-600">
+                <h3 className='text-2xl'>👋 Hi there! I am</h3>
+            </div>
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent pb-6">
+            
+          <Typewriter 
+            options={{
+                strings:[
+                    'BEIMNET GIRUM',
+                    'Web developer',
+                    'Mobile App developer',
+                    'Designer'
+                ],autoStart:true,
+                delay:50,
+                deleteSpeed:50,
+                loop:true,
+            }} />
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
             Building scalable solutions with code and creativity
@@ -28,15 +44,16 @@ export default function Hero() {
             </a>
           </div>
           <div className="flex justify-center gap-6">
-            <a href="https://github.com" className="text-gray-600 hover:text-purple-600 transition-colors">
+            <a href="https://github.com/BequeenCode" className="text-gray-600 hover:text-purple-600 transition-colors">
               <Github size={24} />
             </a>
             <a href="https://linkedin.com" className="text-gray-600 hover:text-purple-600 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:contact@example.com" className="text-gray-600 hover:text-purple-600 transition-colors">
+            <a href="girumbeimnet74@gmail.com" className="text-gray-600 hover:text-purple-600 transition-colors">
               <Mail size={24} />
             </a>
+            <a href="https://t.me/beq_12" className="text-gray-600 hover:text-purple-600 transition-colors"><Send size={24}/></a>
           </div>
         </motion.div>
       </div>
