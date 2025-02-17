@@ -3,8 +3,9 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Exprience from './components/Exprience';
+
 import Hero from './components/Hero';
+import './index.css'
 function App() {
   return (
     <div className="min-h-screen bg-white">
@@ -13,7 +14,7 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
-      <Exprience/>
+  
       <Contact/>
       
       <footer className="bg-gray-900 text-white py-8">
