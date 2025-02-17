@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import myPic from '../assets/aboutMe.jpg'
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -8,7 +9,7 @@ export default function About() {
   });
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white lg:px-40">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -19,22 +20,23 @@ export default function About() {
         >
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-              alt="Sarah Anderson"
-              className="rounded-lg shadow-xl"
+              src={myPic}
+              alt="Beimnet Girum"
+              className="rounded-lg shadow-lg"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-lg" />
+            <div className="absolute inset-[-20px] bg-gradient-to-tr from-purple-600/20 to-transparent rounded-lg lg:w-[500px]" />
           </div>
           
           <div>
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-gray-600 mb-6">
-              Hi! I'm Sarah, a passionate software developer with 5+ years of experience building web applications
-              that make a difference. I specialize in creating scalable, user-friendly solutions using modern technologies.
+            👋 Hi there!
+            I’m currently pursuing Computer Science and Engineering (CSE) at Adama Science and Technology University
+             I’m passionate about software engineering, development, and design, and I’m always eager to collaborate on exciting open-source projects or any creative tech-related work.
             </p>
             <p className="text-gray-600 mb-8">
-              When I'm not coding, you can find me contributing to open-source projects, writing technical articles,
-              or mentoring aspiring developers.
+            I love learning new technologies and strongly believe in growing together with the community.
+             I’m always open to seeking help, sharing knowledge, and improving my skills along the way.
             </p>
             
             <div className="grid grid-cols-2 gap-4">
@@ -44,7 +46,7 @@ export default function About() {
                   <li>React</li>
                   <li>TypeScript</li>
                   <li>Tailwind CSS</li>
-                  <li>Next.js</li>
+                  
                 </ul>
               </div>
               <div>
@@ -52,8 +54,8 @@ export default function About() {
                 <ul className="text-gray-600">
                   <li>Node.js</li>
                   <li>Python</li>
-                  <li>PostgreSQL</li>
-                  <li>GraphQL</li>
+        
+                
                 </ul>
               </div>
             </div>
